@@ -1,0 +1,185 @@
+/* Estilo para el fondo y la alineación */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(0, 153, 255, 0.2) 20%, rgba(255, 102, 0, 0.8) 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+h1, h2 {
+    color: #FF8000;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+/* Contenedor principal centrado */
+.master-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo de la tarjeta de opciones */
+.card {
+    width: 400px;
+    background-color: #333;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    background: #4480FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: #115DFC;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+/* Estilos para el formulario de productos */
+#product-form {
+    background-color: #171717;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+}
+
+#product-form label {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+#productForm input[type="text"], #productForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #252525;
+    border-radius: 10px;
+    background-color: #333;
+    color: #d3d3d3;
+    box-sizing: border-box;
+}
+
+#productForm button {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 10px;
+    background-color: #252525;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+#productForm button:hover {
+    background-color: #FF8000;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para la lista de productos */
+#product-list {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #171717;
+}
+
+#product-list th, #product-list td {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #252525;
+}
+
+#product-list th {
+    background-color: #333;
+    color: #FF6600;
+    font-weight: bold;
+}
+
+#product-list td {
+    color: #d3d3d3;
+}
+
+/* Estilos para los botones de acción en la tabla de productos */
+#productsTable button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#productsTable button:hover {
+    transform: scale(1.05);
+}
+
+#productsTable button:first-child {
+    background-color: #FF8000;
+    margin-right: 5px;
+}
+
+#productsTable button:last-child {
+    background-color: #FF0000;
+}
+
+#productsTable button:first-child:hover {
+    background-color: #E07B00;
+}
+
+#productsTable button:last-child:hover {
+    background-color: #D10000;
+}
